@@ -7,6 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    border: #ebebeb;
 }
 
 h3{
@@ -54,6 +55,7 @@ header nav{
 
 header ul li{
     list-style-type: none;
+    
 }
 
 header ul li a{
@@ -174,7 +176,21 @@ article div.main-article{
     padding: 15px;
 }
 
-@media (min-width: 361px){
+@media (min-width: 361px) {
+
+    header .form .input {
+        background-color: #FFF;
+        border: 1px solid #FFF;
+        outline: none;
+        color: #666;
+        padding: 2px;
+    }
+
+    header nav {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
     main section article .description{
         display: block;
     }
@@ -192,13 +208,15 @@ article div.main-article{
     }
     
     main section div.products article{
-        width: 45%;
+        width: 50%;
     }
 
     .price,
     .discount{
         width: 50%;
     }
+
+   
 }
 footer{
     text-align: center;
@@ -224,11 +242,12 @@ footer i {
     color:#1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    margin-top: 20px;
     transition: color 300ms;
     display: flex;
 }
 footer i:hover {
-    color: orangered;
+    color: #666;
 }
 .formulario-registro{
 background-color: #ebebeb;
@@ -271,7 +290,55 @@ main section article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 @media (min-width: 769px){
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    header div.logo, header .form {
+        width: 30%;
+    }
+    header div.logo {
+        padding: 10px;
+    }
+    header div.top-header p {
+        width: 30%;
+        text-align: center;
+        margin-top: 25px;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    header nav {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    
+    header ul {
+        display: flex;
+    }
+    header li {
+        margin: 0 15px;
+    }
+    
     main section div.products article{
         width: 22%;
     }
-}
+
+    header .form .input {
+        background-color: #FFF;
+        border: 1px solid #FFF;
+        outline: none;
+        color: #666;
+        padding: 9px;
+    }
+
+    header .form {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        font-size: 13px;
+    }
+   
+    }
