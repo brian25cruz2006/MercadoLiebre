@@ -176,7 +176,24 @@ article div.main-article{
     padding: 15px;
 }
 
+.login {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 90px;
+}
+
+.login input {
+    margin-bottom: 50px;
+    padding: 5px;
+}
+
+
 @media (min-width: 361px) {
+
+    header div.top-header p{
+        color: #000;
+    }
 
     header .form .input {
         background-color: #FFF;
@@ -226,12 +243,12 @@ footer{
     text-align: center;
     display: block;
 }
-li b {
+div b {
     display: block;
     font-size: 15px;
     color: #666;
   }
-li p {
+div p {
     display: block;
     font-size: 10px;
     color: gray;
@@ -246,31 +263,61 @@ footer i {
     transition: color 300ms;
     display: flex;
 }
+.copyright{
+    margin-top: 25px;
+}
 footer i:hover {
     color: #666;
 }
-.formulario-registro{
-background-color: #ebebeb;
- display: flex;
- flex-direction: column;
- padding: 0;
+.formulario-registro {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
+
 .login{
     background-color: #ebebeb;
     display: flex;
     flex-direction: column;
 }
-
-.enviar{
+.formulario-registro{
+    margin-top: 15px;
+}
+.formulario-registro input{
+    margin-top: 15px;
+}
+.formulario-registro h3{
+    margin-top: 15px;
+}
+.formulario-registro label{
+    margin-top: 15px;
+}
+.formulario-registro button{
+    margin-top: 25px;
+}
+.enviar {
     background-color: #0044AA;
     color: #FFF;
     border: #0044AA;
+    padding: 5px;
+    margin-top: 50px;
+    width: 400px;
+    margin: auto;
 }
-.borrar{
+.borrar {
     background-color: #0044AA;
     color: #FFF;
-    border: #0044AA
+    border: #0044AA;
+   
+    margin-top: 15px;
+    width: 400px;
+    margin: auto;
+    padding: 6px;
 }
+
+
+
 .description {
     opacity: 0;
     transition: opacity 450ms;
@@ -298,12 +345,14 @@ main section article:hover{
         width: 30%;
     }
     header div.logo {
-        padding: 10px;
+        padding: 30px;
     }
     header div.top-header p {
         width: 30%;
         text-align: center;
-        margin-top: 25px;
+        margin-top: 75px;
+        color: #000;
+        font-size: 1.1em;
     }
     header nav{
         display: flex;
@@ -338,7 +387,57 @@ main section article:hover{
         display: flex;
         align-items: center;
         padding: 5px;
-        font-size: 13px;
+        font-size: 20px;
     }
-   
+    footer .footer-sections {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-sections {
+        padding-left: 0%;
+    }
+    footer .footer-sections div {
+        margin: unset;
+        margin-top: 30px;
+    }
+
+    }
+
+    @media screen and (min-width: 797px) and (max-width: 1733px){
+        header div.logo, header .form {
+            width: 35%;
+        }
+        header div.top-header p {
+            width: 30%;
+            text-align: center;
+            margin-top: 65px;
+            color: #000;
+            font-size: 1.1em;
+        }
+        .borrar {
+            background-color: #0044AA;
+            color: #FFF;
+            border: #0044AA;
+            padding: 5px;
+            margin-top: 15px;
+            width: 1000px;
+            margin: auto;
+        }
+        .enviar {
+            background-color: #0044AA;
+            color: #FFF;
+            border: #0044AA;
+            padding: 5px;
+            margin-top: 50px;
+            width: 1000px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            margin: auto,
+
+        }
+        footer {
+            display: block;
+        }
     }
