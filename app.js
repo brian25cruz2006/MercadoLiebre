@@ -35,3 +35,8 @@ app.post('/login', (req,res) =>{
     console.log(req.body)
     res.redirect("/")
 })
+
+app.post('/procesar-datos', (req,res) =>{
+    console.log(req.body)
+    res.redirect("/")
+})
