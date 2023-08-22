@@ -219,6 +219,14 @@ article div.main-article{
     color: #222222;
   }
 
+  .formulario-registro input{
+    border: #FFF;
+  }
+
+  .login input{
+    border: #FFF;
+  }
+
 @media (min-width: 361px) {
 
     div.searchProduct {
